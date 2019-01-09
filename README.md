@@ -16,3 +16,17 @@ sudo curl https://raw.githubusercontent.com/rahul286/gitlab-bulk-delete-users/ma
 ```
 sudo gitlab-rake gitlab:jd:update_ldap_dn
 ```
+
+## example
+
+```
+:~# sudo gitlab-rake gitlab:jd:update_ldap_dn
+User (<username1> / <email1>): [OK]
+User (<username2> / <email2>): [WARNING]
+cn=<firstname1 lastname1>,ou=old,dc=example,dc=com
+cn=<firstname1 lastname1>,ou=new,dc=example,dc=com
+[Updated]
+.
+.
+.
+```
