@@ -9,7 +9,7 @@ This rake task queries all active LDAP users, check if they still exists in AD (
 # usage
 ## add rake task
 ```
-sudo curl https://raw.githubusercontent.com/rahul286/gitlab-bulk-delete-users/master/bulk_delete.rake -fo /opt/gitlab/embedded/service/gitlab-rails/lib/tasks/gitlab/jd.rake
+sudo curl https://raw.githubusercontent.com/derJD/gitlab_update_ldap_dn/master/bulk_delete.rake -fo /opt/gitlab/embedded/service/gitlab-rails/lib/tasks/gitlab/jd.rake
 ```
 
 ## run task
