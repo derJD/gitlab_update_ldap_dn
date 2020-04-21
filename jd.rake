@@ -4,7 +4,7 @@ namespace :gitlab do
     task update_ldap_dn: :gitlab_environment do
 
       update_dn = ENV['UPDATE_DN']
-      adapter   = Gitlab::Auth::LDAP::Adapter.new('ldapmain')
+      adapter   = Gitlab::Auth::Ldap::Adapter.new('ldapmain')
 
       User.find_each do |user|
         if user.ldap_user? && user.active?
